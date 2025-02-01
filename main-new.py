@@ -12,8 +12,8 @@ if "pineconeAPIKey" not in st.session_state:
   pineconeAPIKey = os.getenv('pineconeAPIKey')
 
 if "pineconeIndexName" not in st.session_state:
-  pineconeIndexName = os.getenv('pineconeIndexName')
-
+  pineconeIndexName = 'championbuild'
+  
 if "my_class_instance" not in st.session_state:
   st.session_state.my_class_instance = NewPineconeQAModel(
     groqAPIKey=groqAPIKey,
